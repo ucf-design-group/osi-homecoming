@@ -1,9 +1,46 @@
-# Version 1.0
+#UCF Homecoming 2014 Meeting
+## Date: 06/04/14
+____
 
-This is a self-made Wordpress framework for use at the Office of Student Involvement at UCF.  We use it as a base for the Wordpress themes we build for OSI Agencies as well as OSI itself.
+### General Ideas:
 
-**Heads Up**:  If you aren't a part of OSI, but you'd like to use this code base, feel free!  Just remember to remove the various logos from the footer.
+* Bring events to home page
+* Countdown timer: Theme Reveal, Homecoming week.
+* Social Media:
+	* Twitter 
+	* Facebook
+	* Instagram
+* Homecoming logo - Featured image to be swapped each year.
 
----
 
-Credit to [Bill Columbia](http://billcolumbia.com) for the majority of the code you see here, and [AJ Foster](http://aj-foster.com) for some of the updates.
+### Post types:
+
+* Board
+	* Name
+	* Position
+	* Email
+	* Featured image
+	* Twitter(TBD)
+	
+* Events
+	* Title
+	* Date
+	* Description
+	* Featured image
+	* Specific Event Page for sharing capabilities
+	
+* Facebook albums
+
+* Sponsors
+	* Short Blurb
+	* Logo
+	
+### Pages:
+
+* Home
+* Events (Merge Competition)
+* History
+* Media
+* Sponsorship(TBD)
+* Contact
+* Volunteer
