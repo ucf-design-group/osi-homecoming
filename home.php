@@ -57,6 +57,8 @@
 	?>
 
 						<p><a href="<?php echo site_url('/events/'); ?>">See More Events</a></p>
+						<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
+					
 					</section>
 			</div>
 

@@ -3,7 +3,7 @@
 get_header(); ?>
 
 			<div class="content-area">
-				<div class="main"> 
+				<div class="main">
 <?php
 					while (have_posts()) {
 						the_post();
@@ -40,6 +40,7 @@ get_header(); ?>
 							if ($link != "") {
 ?>
 							<p><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></p>
+							<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 <?php				}
 ?>
 						</article>
