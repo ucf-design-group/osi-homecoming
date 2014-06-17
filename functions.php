@@ -115,6 +115,17 @@ function custom_post_types() {
 	'taxonomies' => array(),
 	'has_archive' => false
 	));
+
+	register_post_type('sponsors', array(
+	'labels' => array(
+		'name' => 'Sponsors',
+		'singular_name' => 'Sponsor'),
+	'public' => true,
+	'hierarchical' => false,
+	'supports' => array('title', 'editor', 'thumbnail'),
+	'taxonomies' => array(),
+	'has_archive' => false
+	));
 }
 
 add_action('init', 'custom_post_types');
@@ -149,5 +160,6 @@ function cpt_icons() {
 include_once("functions/functions-nav.php");
 include_once("functions/functions-board.php");
 include_once("functions/functions-albums.php");
+include_once("functions/functions-sponsors.php");
 
 ?>
