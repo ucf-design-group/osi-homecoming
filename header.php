@@ -26,7 +26,6 @@
 					<div class="screen-reader-text skip-link"><a href="#UPDATE ME" title="Skip to content">Skip to content</a></div>
 					<div class="compact-menu">
 						<a href="#" class="menu-toggle">Menu</a>
-						<?php get_search_form(); ?>
 					</div>
 					<ul>
 <?php
@@ -49,11 +48,6 @@
 						<li<?php echo $nav_li_class; ?>><a href="<?php echo $link; ?>"><?php echo $name; ?></a></li>
 <?php 							}
 							} ?>
-						<li>
-							<form method="get" id="searchform" class="searchform" action="http://localhost/wp/" role="search">
-								<input type="search" class="field" name="s" value="" id="s" placeholder="Search &#133;" />
-							</form>
-						</li>
 					</ul>
 				</nav>
 			</header>
