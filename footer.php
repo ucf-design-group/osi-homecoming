@@ -15,10 +15,8 @@
 				email: <a href="mailto:osi@ucf.edu">osi@ucf.edu</a> | phone: <a href="tel:4078236471">407.823.6471</a> | fax: <a href="tel:4078235899">407.823.5899</a><br />
 			</p>
 		</footer>
-		
-		<?php wp_footer(); ?>
-
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<?php wp_footer(); ?>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 	</body>
 </html>
