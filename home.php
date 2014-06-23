@@ -42,6 +42,8 @@
 							if ($link != "") {
 ?>
 							<p><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></p>
+							<p><a href="<?php echo site_url('/events/'); ?>">See More Events</a></p>
+							<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 <?php				}
 ?>
 						</article>
@@ -56,8 +58,7 @@
 					}
 	?>
 
-						<p><a href="<?php echo site_url('/events/'); ?>">See More Events</a></p>
-						<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
+						
 					
 					</section>
 			</div>
