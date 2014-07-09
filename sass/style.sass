@@ -52,44 +52,38 @@ video#bgvid
 	background: url(resources/spirit.png) no-repeat
 	background-size: cover
 
-
 .enter
-	// text-align: center
-	margin: auto
-	cursor: pointer
-	border: 3px solid white
-	// display: inline-block
-	font-family: 'Helvetica'
-	font-size: 1.6em
-	font-weight: 300
-	letter-spacing: 1px
-	padding: 10px
 	text-align: center
-	vertical-align: middle
-	width: 15em
-	text-decoration: none
-	// -webkit-transition: color 0.5s ease-in-out
-	// -moz-transition: color 0.5s ease-in-out
-	// -ms-transition: color 0.5s ease-in-out
-	// -o-transition: color 0.5s ease-in-out
-	transition: all 0.5s ease-in-out
 
-	&:hover
-		position: relative
-		left: 1px
-		top: 1px
-		border: 3px solid gold
-		color: gold
-
-		a
-			color: gold
-			text-decoration: none
-	
 	a
-		color: white
+		margin: auto
+		cursor: pointer
+		border: 3px solid gold
+		border-radius: 5px
+		display: inline-block
+		font-family: 'Helvetica'
+		font-size: 2em
+		font-weight: 300
+		letter-spacing: 1px
+		padding: 0.5em 1em
+		text-align: center
+		vertical-align: middle
+		text-align: center
 		text-decoration: none
+		color: gold
+		text-decoration: none
+		// -moz-transition: color 0.5s ease-in-out
+		// -ms-transition: color 0.5s ease-in-out
+		// -o-transition: color 0.5s ease-in-out
+		-webkit-transition: color 0.5s ease-in-out
 		transition: all 0.5s ease-in-out
+		-webkit-animation: fadein 2s 1
 
+	
+		&:hover
+			border: 3px solid white
+			color: white
+	
 
 // Countdown Timer
 
@@ -125,3 +119,15 @@ video#bgvid
 	h1
 		color: #ffffff
 		font-size: 7em
+
+
+
+
+
+//stupid place for this stupid animation
+
+@-webkit-keyframes fadein 
+	0% 
+		opacity: 0
+	100% 
+		opacity: 1
