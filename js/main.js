@@ -32,6 +32,7 @@ $(document).ready(function () {
 
 	adjustNav();
 	countdownTimer();
+	allowDesktopBGVidLoad();
 
 	$(".menu-toggle").click(function (evt) {
 
@@ -48,6 +49,8 @@ $(document).ready(function () {
 $(window).resize(function () {
 
 	adjustNav();
+	responsiveBgVideo();
+
 });
 
 
@@ -64,12 +67,43 @@ $(window).resize(function () {
 
 // Fancybox js
 
-$(document).ready(function() {
-		$(".fancybox").fancybox();
+// $(document).ready(function() {
+// 		$(".fancybox").fancybox();
+// 		responsiveBgVideo();
+// 	});
+
+
+function responsiveBgVideo () {
+
+	$(".bgvid").each(function () {
+
+		width = $(this).width();
+		totalWidth = $(this.parentElement).width();
+
+		$(this.parentElement).scrollLeft((width - totalWidth) / 2);
 	});
+}
 
+// Remove videobg on mobile
 
+function allowDesktopBGVidLoad () {
 
+	if ( $(window).width() > 600) { 
+		     
+		var source = document.createElement('source');
+			source.src = sourceArray[0].source;
+			source.type = sourceArray[0].type;
+
+		var source2 = document.createElement('source');
+			source2.src = sourceArray[1].source;
+			source2.type = sourceArray[1].type;
+
+		document.getElementById("bgvid").appendChild(source);
+		document.getElementById("bgvid").appendChild(source2);
+
+	}
+	
+}
 
 
 
@@ -79,7 +113,7 @@ $(document).ready(function() {
 
 function countdownTimer() {
 
-	var endTime = new Date("15 July 2014");			
+	var endTime = new Date("20 August 2014");			
 	endTime = (Date.parse(endTime) / 1000);
 
 	var now = new Date();

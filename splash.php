@@ -10,28 +10,34 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 		<![endif]-->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+		<script type="text/javascript">
+			sourceArray = [
+			{
+				source:'<?php echo get_stylesheet_directory_uri(); ?>/resources/spirit.webm',
+				type: 'video/webm'
+			},
+			{
+				source: '<?php echo get_stylesheet_directory_uri(); ?>/resources/spirit.mp4',
+				type: 'video/mp4'
+			}]
+
+		</script>
 	</head>
 	<body>
 		<div class="content-area">
-			<div class="main"> 
-				<?php
-				while (have_posts()) {
-					the_post();
-					get_template_part( 'content', 'page' );
-				} ?>
-			</div>
-				<video autoplay loop poster="<?php echo get_stylesheet_directory_uri(); ?>/resources/spirit.png" id="bgvid">
-				<source src="<?php echo get_stylesheet_directory_uri(); ?>/resources/spirit.webm" type="video/webm">
-				<source src="<?php echo get_stylesheet_directory_uri(); ?>/resources/spirit.mp4" type="video/mp4">
+			<div class="splash-background">
+				<video id="bgvid" class="bgvid" autoplay loop poster="<?php echo get_stylesheet_directory_uri(); ?>/resources/spirit.jpg">
 				</video>
-				<div class="countdown-timer">
-					<div id="days"></div>
-					<div id="hours"></div>
-					<div id="minutes"></div>
-					<div id="seconds"></div>
-					<h1>Until Theme Reveal</h1>
-				</div>
-				<div class="enter"><a href="http://osi.ucf.edu/homecoming/home">Continue to Homepage &#x276f;</a></div>
+			</div>
+			<div class="countdown-timer">
+				<div id="days"></div>
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+				<h1>Until Theme Reveal</h1>
+			</div>
+			<div class="enter"><a href="http://osi.ucf.edu/homecoming/home">Continue to Homepage &#x276f;</a></div>
+			<div class="logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/reveal.png"></div>
 		</div>
 	<footer>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
