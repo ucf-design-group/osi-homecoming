@@ -31,8 +31,17 @@ function adjustNav() {
 $(document).ready(function () {
 
 	adjustNav();
+
+	//Start Timer Countdown on Splash Page
 	countdownTimer();
+
+	// Adjust video bg for mobile styles
 	allowDesktopBGVidLoad();
+	responsiveBgVideo();
+
+	// Call Fancybox
+	$(".fancybox, .fbalbum").fancybox();
+
 
 	$(".menu-toggle").click(function (evt) {
 
@@ -65,13 +74,6 @@ $(window).resize(function () {
 }(document, 'script', 'facebook-jssdk'));
 
 
-// Fancybox js
-
-// $(document).ready(function() {
-// 		$(".fancybox").fancybox();
-// 		responsiveBgVideo();
-// 	});
-
 
 function responsiveBgVideo () {
 
@@ -88,21 +90,29 @@ function responsiveBgVideo () {
 
 function allowDesktopBGVidLoad () {
 
-	if ( $(window).width() > 600) { 
-		     
-		var source = document.createElement('source');
-			source.src = sourceArray[0].source;
-			source.type = sourceArray[0].type;
+	// Check if .bgvideo is on the page, if not don't run this function
+	if ($(".bgvid").length > 0){
 
-		var source2 = document.createElement('source');
-			source2.src = sourceArray[1].source;
-			source2.type = sourceArray[1].type;
+		// If screen resolution is Greater then 600 create source element
+		if ( $(window).width() > 600) { 
+			     
 
-		document.getElementById("bgvid").appendChild(source);
-		document.getElementById("bgvid").appendChild(source2);
+			// Add source 1 from array on Splash.php
+			var source = document.createElement('source');
+				source.src = sourceArray[0].source;
+				source.type = sourceArray[0].type;
 
+			// Add source 2 from array on Splash.php
+			var source2 = document.createElement('source');
+				source2.src = sourceArray[1].source;
+				source2.type = sourceArray[1].type;
+
+			// Append source elements to HTML5 bg video tag
+			document.getElementById("bgvid").appendChild(source);
+			document.getElementById("bgvid").appendChild(source2);
+
+		}
 	}
-	
 }
 
 
