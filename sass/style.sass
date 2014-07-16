@@ -12,9 +12,11 @@
 // Change this to whatever you'd like. This is just the default so we 
 // have something nice to prototype with.
 @font-face 
-	font-family: 'Fairview'
-	src: url('resources/Fairview_Regular.otf') /* IE9 Compat Modes */
-
+	font-family: 'fairviewregular'
+	src: url('resources/fairview_regular-webfont.eot')
+	src: url('resources/fairview_regular-webfont.eot?#iefix') format('embedded-opentype'), url('resources/fairview_regular-webfont.woff') format('woff'), url('resources/fairview_regular-webfont.ttf') format('truetype'), url('resources/fairview_regular-webfont.svg#fairviewregular') format('svg')
+	font-weight: normal
+	font-style: normal
 
 // Necessary imports, feel free to explore and hack though :)
 @import reset, menu, buttons, footer
@@ -22,13 +24,16 @@
 // Base variables
 $baseTypeFace: 'Open Sans', sans-serif
 
-
+$gold: #FFCA06
 // Base layout/type
 html
 	font-size: 16px
+
 body
 	font: 62.5%/1.5 $baseTypeFace
-	font-weight: 600 
+	font-weight: 600
+
+
 	
 // Clearfix (to use, @extend %clearfix)
 %clearfix
@@ -40,25 +45,50 @@ body
 		clear: both
 
 
-video#bgvid 
+.splash-background
 	position: fixed 
 	right: 0 
 	bottom: 0
+	background: url(resources/spirit_still.jpg) no-repeat center
 	min-width: 100% 
 	min-height: 100%
-	width: auto 
-	height: auto 
+	width: 100% 
+	height: 100% 
 	z-index: -100
-	background: url(resources/spirit.png) no-repeat
 	background-size: cover
+	overflow: hidden
+	// text-align: center
+	// position: relative
 
+	.bgvid
+		display: none
+		position: absolute 
+		right: 0 
+		left: 0
+		margin: auto
+		min-width: 100% 
+		display: none
+		min-height: 100%
+		width: auto
+		z-index: -100
+		background: url(resources/spirit.jpg) no-repeat
+		background-size: cover
+
+		@media screen and (min-width: 600px)
+
+			display: inline-block
+
+.logo
+	margin-top: 3em
+	display: block
+	text-align: center
 .enter
 	text-align: center
 
 	a
 		margin: auto
 		cursor: pointer
-		border: 3px solid gold
+		border: 3px solid $gold
 		border-radius: 5px
 		display: inline-block
 		font-family: 'Helvetica'
@@ -70,15 +100,18 @@ video#bgvid
 		vertical-align: middle
 		text-align: center
 		text-decoration: none
-		color: gold
+		color: $gold
 		text-decoration: none
-		// -moz-transition: color 0.5s ease-in-out
-		// -ms-transition: color 0.5s ease-in-out
-		// -o-transition: color 0.5s ease-in-out
+		-moz-transition: color 0.5s ease-in-out
+		-ms-transition: color 0.5s ease-in-out
+		-o-transition: color 0.5s ease-in-out
 		-webkit-transition: color 0.5s ease-in-out
 		transition: all 0.5s ease-in-out
+		-moz-animation: fadein 2s 1
+		-ms-animation: fadein 2s 1
+		-o-animation: fadein 2s 1
 		-webkit-animation: fadein 2s 1
-
+		animation: fadein 2s 1
 	
 		&:hover
 			border: 3px solid white
@@ -89,7 +122,7 @@ video#bgvid
 
 .countdown-timer
 	margin: 3em 0 3em 0
-	font-family: 'Fairview'
+	font-family: 'fairviewregular'
 	letter-spacing: 5px
 	text-align: center
 
@@ -102,19 +135,19 @@ video#bgvid
 		color: white
 		display: block
 		margin-top: -1em
-		font-size: 3rem
+		font-size: 0.25em
 
 	#days
-		color: gold 
+		color: $gold 
 
 	#hours
-		color: gold 
+		color: $gold 
 
 	#minutes
-		color: gold 
+		color: $gold 
 
 	#seconds
-		color: gold 
+		color: $gold 
 		
 	h1
 		color: #ffffff
@@ -124,10 +157,14 @@ video#bgvid
 
 
 
-//stupid place for this stupid animation
+//Fixme: stupid place for this stupid animation
 
 @-webkit-keyframes fadein 
 	0% 
 		opacity: 0
 	100% 
 		opacity: 1
+
+
+
+
