@@ -39,9 +39,13 @@ $(document).ready(function () {
 	allowDesktopBGVidLoad();
 	responsiveBgVideo();
 
+	// Check if .fancybox or .fbalbum is being used on the page, if not don't run call function
+	if ($(".fancybox, .fbalbum").length > 0){
+
 	// Call Fancybox
 	$(".fancybox, .fbalbum").fancybox();
 
+	}
 
 	$(".menu-toggle").click(function (evt) {
 
@@ -114,7 +118,7 @@ function allowDesktopBGVidLoad () {
 		}
 	}
 }
-
+       
 
 
 //Countdown Timer
