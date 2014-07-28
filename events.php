@@ -4,12 +4,6 @@ get_header(); ?>
 
 			<div class="content-area">
 				<div class="main">
-<?php
-					while (have_posts()) {
-						the_post();
-						get_template_part( 'content', 'page' );
-} ?>
-
 					<section class="importantevents">
 <!-- Loop for Super Important Events -->
 <?php
