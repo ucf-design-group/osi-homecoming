@@ -37,7 +37,7 @@
 				<h1>Until Theme Reveal</h1>
 			</div>
 			<div class="enter"><a href="http://osi.ucf.edu/homecoming/home">Continue to Homepage &#x276f;</a></div>
-			<div class="logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/reveal.png"></div>
+			<div class="splash-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/reveal.png"></div>
 		</div>
 	<footer>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
