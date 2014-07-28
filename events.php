@@ -13,7 +13,7 @@ get_header(); ?>
 					<section class="events">
 <?php
 						$counter = 0;
-						$eventLoop = new WP_QUERY(array('post_type' => 'osi-events', 'posts_per_page' => -1, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'oe-form-start', 'meta_value' => time(), 'meta_compare' => '>='));
+						$eventLoop = new WP_QUERY(array('post_type' => 'osi-events', 'posts_per_page' => -1, 'orderby' =>'meta_value', 'order' => 'ASC', 'meta_key' => 'oe-form-start'));
 						while ($eventLoop->have_posts()) {
 							$eventLoop->the_post();
 							$title = get_the_title();
