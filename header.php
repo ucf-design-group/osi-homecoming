@@ -22,6 +22,8 @@
 	<body <?php echo $body_class; ?>>
 		<div class="page">
 			<header>
+				<div class="logo"></div>
+				<div class="hr"></div>
 				<nav class="main-menu full">
 					<div class="screen-reader-text skip-link"><a href="#UPDATE ME" title="Skip to content">Skip to content</a></div>
 					<div class="compact-menu">
