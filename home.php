@@ -7,10 +7,13 @@
 					<?php
 					while (have_posts()) {
 						the_post();
-						get_template_part( 'content', 'page' );
+						get_template_part( 'content');
 					} ?>
+					<div class="button"><a href="http://osi.ucf.edu/homecoming/events">See The Events</a></div>
 				</div>
+
 				<div class="knightro"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/knightro.png" alt=""></div>
+					
 					<section class="events">
 					<h1>Next Upcoming Event</h1>
 
