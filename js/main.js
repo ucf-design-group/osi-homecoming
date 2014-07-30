@@ -30,6 +30,67 @@ function adjustNav() {
 
 $(document).ready(function () {
 
+	//TILE TESTING AREA -------- //
+
+	var largeUp = false;
+
+	$('.moreinfo--l').mouseleave(function(){
+			if(largeUp == true){
+				$(this).animate({height: "50px"});
+				$(this).removeClass('moreinfo--open');
+				$('.moreinfo').children('.arrowspan').html('<i class="fa fa-arrow-circle-up"></i>');
+				largeUp = false;
+			}
+	});
+
+	$('.moreinfo--l').click(function(){
+		if(largeUp == false){
+			$(this).animate({height: "79.7%"});
+			$(this).addClass('moreinfo--open');
+			$('.moreinfo--open').children('.arrowspan').html('<i class="fa fa-arrow-circle-down"></i>');
+			largeUp = true;
+		} else if(largeUp == true){
+			$(this).animate({height: "50px"});
+			$(this).removeClass('moreinfo--open');
+			$('.moreinfo').children('.arrowspan').html('<i class="fa fa-arrow-circle-up"></i>');
+			largeUp = false;
+		}
+	});
+
+	//TILE TESTING AREA ------- //
+	//TILE TESTING AREA -------- //
+
+	var smallUp = false;
+
+	$('.moreinfo--s').mouseleave(function(){
+			if(smallUp == true){
+				$(this).animate({height: "28px"});
+				$(this).removeClass('moreinfo--open');
+				$('.moreinfo').children('.arrowspan').html('<i class="fa fa-arrow-circle-up"></i>');
+				smallUp = false;
+			}
+	});
+
+	$('.moreinfo--s').click(function(){
+		if(smallUp == false){
+			$(this).animate({height: "79.7%"});
+			$(this).addClass('moreinfo--open');
+			$('.moreinfo--open').children('.arrowspan').html('<i class="fa fa-arrow-circle-down"></i>');
+			smallUp = true;
+		} else if(smallUp == true){
+			$(this).animate({height: "28px"});
+			$(this).removeClass('moreinfo--open');
+			$('.moreinfo').children('.arrowspan').html('<i class="fa fa-arrow-circle-up"></i>');
+			smallUp = false;
+		}
+	});
+
+	//TILE TESTING AREA ------- //
+
+
+
+
+
 	adjustNav();
 
 	//Start Timer Countdown on Splash Page
@@ -150,3 +211,12 @@ function countdownTimer() {
 	$("#seconds").html(seconds + "<span class='countdown-label'>Seconds</span>");		
 
 }
+
+
+
+
+// --------------------------------------------- //
+// --------------------------------------------- //
+// ------------- EVENTS PAGE TILE -------------- //
+// --------------------------------------------- //
+// --------------------------------------------- //
