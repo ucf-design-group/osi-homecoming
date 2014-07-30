@@ -37,7 +37,7 @@
 							else
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
-						<article class="next-event">
+						<article class="event">
 							<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
 							<h3><?php echo $title; ?></h3>
 							<h4><?php echo $dates; ?></h4>
