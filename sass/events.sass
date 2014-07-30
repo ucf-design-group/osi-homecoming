@@ -1,35 +1,110 @@
-//Super Important Events
-section.importantevents
-	@extend %clearfix
+.page-events
 
-article.importantevent
-	float: left
-	width: 50%
-	height: 640px
+	// Super Important Events --------------------------------------------- //
+	section.importantevents
+		@extend %clearfix
 
-div.eventtop
-	background-color: rgba(0,0,0,0.75)
-	color: $gold
-	height: 20%
-	text-align: center
-	padding-top: 1em
+	article.importantevent
+		float: left
+		width: 50%
+		height: 640px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+		border-left: 1px solid black
+		border-right: 1px solid black
 
-	//CHANGE THIS CHANGE THIS
-	h3
-		font-size: 4em
-	h4
-		font-size: 3em
+	div.importanteventtop
+		background-color: rgba(0,0,0,0.8)
+		color: $gold
+		height: 130px
+		text-align: center
+		padding-top: 1.1em
+
+		h3
+			font-size: 4em
+		h4
+			font-size: 3em
+
+	div.importanteventbottom
+		text-align: left
+		display: none
+		padding: 2em
+		overflow: hidden
 
 
-//Normal Events
-section.events
-	@extend %clearfix
+	// Normal Events --------------------------------------------- //
+	section.events
+		@extend %clearfix
 
-article.event
-	float: left
-	width: 25%
-	background-color: red
-	min-height: 320px
+	article.event
+		float: left
+		width: 25%
+		background-color: $headerColor
+		min-height: 320px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+		border-left: 1px solid black
+		border-right: 1px solid black
 
+	div.eventtop
+		background-color: rgba(0,0,0,0.8)
+		color: $gold
+		height: 65px
+		text-align: center
+		padding-top: 0.1em
 
+		h3
+			font-size: 2.5em
+		h4
+			font-size: 1.5em
 
+	div.eventbottom
+		text-align: left
+		display: none
+		padding: 2em
+		overflow: hidden
+
+	// BOTH --------------------------------------------- //
+	div.moreinfo
+		width: 100%
+		height: 50px
+		background-color: $headerColorOpacity
+		text-align: center
+		position: absolute
+		bottom: 0
+		cursor: pointer
+		padding-top: 4px
+		transition: color 0.25s, background-color 0.25s ease-in-out
+
+		span
+			font-size: 3.5em
+			color: $bodyColor
+
+		&:hover
+			background-color: $bodyColor
+
+			span
+				color: $headerColorOpacity
+
+	div.moreinfo--s
+		height: 28px
+		padding: 0
+
+		span
+			font-size: 2em
+
+	div.moreinfo--open
+		background-color: $headerColorOpacity
+
+		div.eventbottom, div.importanteventbottom
+			display: block
+
+		&:hover
+			background-color: $headerColorOpacity
+
+			span
+				color: $bodyColor
