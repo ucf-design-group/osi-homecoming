@@ -10,6 +10,7 @@
 						get_template_part( 'content', 'page' );
 					} ?>
 				</div>
+				<div class="knightro"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/knightro.png" alt=""></div>
 					<section class="events">
 					<h1>Next Upcoming Event</h1>
 
