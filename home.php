@@ -7,10 +7,13 @@
 					<?php
 					while (have_posts()) {
 						the_post();
-						get_template_part( 'content', 'page' );
+						get_template_part( 'content');
 					} ?>
+					<div class="button"><a href="http://osi.ucf.edu/homecoming/events">See The Events</a></div>
 				</div>
+
 				<div class="knightro"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/knightro.png" alt=""></div>
+					
 					<section class="events">
 					<h1>Next Upcoming Event</h1>
 
@@ -34,7 +37,7 @@
 							else
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
-						<article class="next-event">
+						<article class="event">
 							<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
 							<h3><?php echo $title; ?></h3>
 							<h4><?php echo $dates; ?></h4>
