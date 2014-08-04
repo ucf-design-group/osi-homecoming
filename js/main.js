@@ -30,7 +30,7 @@ function adjustNav() {
 
 $(document).ready(function () {
 
-	//TILE TESTING AREA -------- //
+	// ---------- EVENT PAGE TILES ---------- //
 
 	var largeUp = false;
 
@@ -57,9 +57,6 @@ $(document).ready(function () {
 		}
 	});
 
-	//TILE TESTING AREA ------- //
-	//TILE TESTING AREA -------- //
-
 	var smallUp = false;
 
 	$('.moreinfo--s').mouseleave(function(){
@@ -85,7 +82,7 @@ $(document).ready(function () {
 		}
 	});
 
-	//TILE TESTING AREA ------- //
+	// ---------- EVENT PAGE TILES ---------- //
 
 
 
