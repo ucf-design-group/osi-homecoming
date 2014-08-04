@@ -27,7 +27,6 @@ get_header(); ?>
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
 						<article class="importantevent" style="background-image: url('<?php echo $image_url[0]; ?>') ">
-							<!-- <a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a> -->
 							<div class="importanteventtop">
 								<h3><?php echo $title; ?></h3>
 								<h4><?php echo $dates; ?></h4>
@@ -39,7 +38,7 @@ get_header(); ?>
 	<?php
 									if ($link != "") {
 	?>
-									<p><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></p>
+									<div class="button"><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></div>
 									<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 	<?php				}
 	?>
@@ -80,7 +79,6 @@ get_header(); ?>
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
 						<article class="event" style="background-image: url('<?php echo $image_url[0]; ?>') ">
-							<!-- <a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a> -->
 							<div class="eventtop">
 								<h3><?php echo $title; ?></h3>
 								<h4><?php echo $dates; ?></h4>
