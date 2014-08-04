@@ -12,8 +12,6 @@
 		background-repeat: no-repeat
 		background-position: center
 		position: relative
-		border-left: 1px solid black
-		border-right: 1px solid black
 
 	div.importanteventtop
 		background-color: rgba(0,0,0,0.8)
@@ -30,8 +28,14 @@
 	div.importanteventbottom
 		text-align: left
 		display: none
-		padding: 2em
+		padding: 5em
 		overflow: hidden
+		color: $bodyColor
+
+		p
+			font-weight: 300
+			font-family: $futura
+			font-size: 1.75em
 
 
 	// Normal Events --------------------------------------------- //
@@ -47,8 +51,6 @@
 		background-repeat: no-repeat
 		background-position: center
 		position: relative
-		border-left: 1px solid black
-		border-right: 1px solid black
 
 	div.eventtop
 		background-color: rgba(0,0,0,0.8)
@@ -65,8 +67,15 @@
 	div.eventbottom
 		text-align: left
 		display: none
-		padding: 2em
+		padding: 3em
 		overflow: hidden
+		color: $bodyColor
+
+		p
+			font-size: 1.1em
+			font-weight: 300
+
+	
 
 	// BOTH --------------------------------------------- //
 	div.moreinfo
@@ -77,7 +86,6 @@
 		position: absolute
 		bottom: 0
 		cursor: pointer
-		padding-top: 4px
 		transition: color 0.25s, background-color 0.25s ease-in-out
 
 		span
@@ -108,3 +116,22 @@
 
 			span
 				color: $bodyColor
+
+
+
+
+// -------------- TESTING AREA ------------ //
+	.button
+		text-align: center
+
+		a
+			margin: auto
+			color: $gold
+
+			&:after
+				background: rgba(0, 0, 0, 0.501)
+
+			
+			&:hover
+				color: $gold
+				border: 3px solid black
