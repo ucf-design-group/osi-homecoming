@@ -38,7 +38,7 @@ get_header(); ?>
 	<?php
 									if ($link != "") {
 	?>
-									<div class="button"><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></div>
+									<div class="button button--dark"><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></div>
 									<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 	<?php				}
 	?>
@@ -105,9 +105,12 @@ get_header(); ?>
 		<?php
 						}
 		?>
-							</div>
+								</div>
 							</div>
 					</section>
+					<div class="eventspacer">
+						
+					</div>
 				</div>
 			</div>
 
