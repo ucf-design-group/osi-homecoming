@@ -36,7 +36,7 @@
 				<div id="seconds"></div>
 				<h1>Until Theme Reveal</h1>
 			</div>
-			<div class="button"><a href="http://osi.ucf.edu/homecoming/home">Continue to Homepage &#x276f;</a></div>
+			<div class="button button--dark"><a href="http://osi.ucf.edu/homecoming/home">Continue to Homepage &#x276f;</a></div>
 			<div class="splash-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/reveal.png"></div>
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
