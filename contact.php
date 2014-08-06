@@ -7,7 +7,7 @@ get_header(); ?>
 					<?php
 					while (have_posts()) {
 						the_post();
-						get_template_part( 'content', 'page' );
+						get_template_part( 'content' );
 					} ?>
 				</div>
 					<section class="exec-board">
@@ -19,17 +19,19 @@ get_header(); ?>
 							$title = get_the_title();
 							$content = get_the_content();
 							$image = get_the_post_thumbnail($post->ID, 'thumbnail');
+							$image_url = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'full');
 							$position = get_post_meta($post->ID, 'leader-form-position', true);
 							$email = get_post_meta($post->ID, 'leader-form-email', true);
 							$twitter = get_post_meta($post->ID, 'leader-form-twitter', true);
+
 ?>							
-						<article class="leader">
-							<h3><?php echo $title; ?></h3>
-							<?php echo $image; ?>
-							<p><?php echo $position; ?></p>
-							<a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
-							<a class="twitter" href="https://twitter.com/<?php echo $twitter; ?>">@<?php echo $twitter; ?></a>
-							<p><?php echo $content; ?></p>
+						<article class="leader" style="background-image: url('<?php echo $image_url[0]; ?>') ">
+							<div class="leaderinfo">
+								<h3><?php echo $title; ?></h3>
+								<p><?php echo $position; ?></p>
+								<span>Email:</span><a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+								<span>Twitter:</span><a class="twitter" href="https://twitter.com/<?php echo $twitter; ?>">@<?php echo $twitter; ?></a>
+							</div>
 						</article>
 <?php 				}
 ?>
