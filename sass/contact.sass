@@ -1,0 +1,51 @@
+.page-contact
+	//Exec Board --------------------------------------------- //
+	section.exec-board
+		width: 1251px
+		padding: 1em
+		margin: auto
+		@extend %clearfix
+
+		h2
+			font-family: $futura
+			font-size: 3em
+			text-align: center
+			margin: 1em 0
+	
+	article.leader
+		float: left
+		width: 400px
+		height: 400px
+		margin-right: 1.25%
+		margin-bottom: 1%
+		background: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+
+		&:nth-of-type(3n+3)
+			margin-right: 0
+
+	div.leaderinfo
+		width: 95%
+		padding-bottom: 0.5em
+		background-color: rgba(245,245,245,0.85)
+		position: absolute
+		bottom: 0
+		margin-left: 2.5%
+		margin-bottom: 2.5%
+		text-align: center
+		font-family: $futura
+
+		h3
+			font-size: 2em
+
+		span, a
+			font-size: 1.25em
+
+		span
+			margin: 0 0.45em 0 0.1em
+
+
+			&:last-of-type
+				margin: 0 0.45em 0 0.75em
