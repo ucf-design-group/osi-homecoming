@@ -14,6 +14,10 @@ nav.main-menu
 		text-decoration: none
 		color: $gold
 		font-weight: 200
+		transition: color 0.25s ease-in-out
+
+		&:hover
+			color: $bodyColor
 
 
 nav.main-menu.full
@@ -22,6 +26,7 @@ nav.main-menu.full
 		display: block
 		max-width: $max-width
 		margin: auto
+		margin-top: 2px
 
 	li 
 		display: inline-block
@@ -49,3 +54,15 @@ nav.main-menu.compact
 
 .screen-reader-text
 	display: none
+
+
+li.current
+	a
+		background-color: $bodyColor
+		color: $black
+		border-top-left-radius: 900%
+		border-top-right-radius: 900%
+		font-weight: 500
+
+		&:hover
+			color: $black
