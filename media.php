@@ -23,7 +23,7 @@ get_header(); ?>
 						<article class="album">
 							<!-- <h3><?php echo $title; ?></h3> -->
 							<?php echo do_shortcode('[fbalbum url="' . $albumlink . '" limit=36]'); ?>
-							<a href="<?php echo $albumlink; ?>">See More on Facebook</a>
+							<a href="<?php echo $albumlink; ?>">See More on Facebook &#x279c;</a>
 						</article>
 <?php 				}
 ?>
