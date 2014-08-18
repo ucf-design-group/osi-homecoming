@@ -9,7 +9,7 @@
 						the_post();
 						get_template_part( 'content');
 					} ?>
-					<div class="button button--dark"><a href="http://osi.ucf.edu/homecoming/events">See The Events</a></div>
+					<div class="button button--light"><a href="http://osi.ucf.edu/homecoming/events">See The Events</a></div>
 				</div>
 
 				<div class="knightro"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/knightro.png" alt=""></div>
