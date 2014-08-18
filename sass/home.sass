@@ -1,25 +1,31 @@
 .page-home
 
 
+	div.content-area
+		padding: 7em 2em
+
 	.main, .knightro
-		// width: 50%
+		width: 50%
 		display: inline-block
 		// float: left
-		text-align: center
-
+		// margin: auto
 	.knightro
-		// float: right
+		float: right
 
 	.main
 		padding-top: 10em
-		// float: left
+		float: left
+		
+		h1, h2
+			text-align: center
 
 	.button
 		margin-top: 5em
+
 		a
 	
 			&:after
-				background: black
+				// background: black
 
 			&:hover
 				
@@ -28,14 +34,33 @@
 	.events
 		// background-color: red
 		clear: both
+		padding: 2em 
 
 		.event
-			background-color: rgba(0, 0, 0, 0.5)
+			background-color: rgba(0, 0, 0, 0.8)
 			text-align: center
-			color: $bodyColor
-			// padding: 1em 25em
+			// color: $bodyColor
+			padding: 1em
 			margin: auto
 
+			h3, h4, img, a
+				margin: 0.5em 0 0.5em 0
+
+			img
+				margin: 2em 0 2em 0
+
+			h3
+				font-size: 4em
+				color: gold
+				
+			h4
+				font-size: 3em
+				color: gold
+			
+			p
+				width: 75%
+				margin: auto
+				color: white
 
 			.button
 				margin: auto
