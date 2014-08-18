@@ -7,7 +7,7 @@ get_header(); ?>
 					<?php
 					while (have_posts()) {
 						the_post();
-						get_template_part( 'content', 'page' );
+						get_template_part( 'content' );
 					} ?>
 				</div>
 
@@ -21,8 +21,8 @@ get_header(); ?>
 							$albumlink = get_post_meta($post->ID, 'album-form-link', true);
 ?>	
 						<article class="album">
-							<h3><?php echo $title; ?></h3>
-							<?php echo do_shortcode('[fbalbum url="' . $albumlink . '" limit=8]'); ?>
+							<!-- <h3><?php echo $title; ?></h3> -->
+							<?php echo do_shortcode('[fbalbum url="' . $albumlink . '" limit=36]'); ?>
 							<a href="<?php echo $albumlink; ?>">See More on Facebook</a>
 						</article>
 <?php 				}
