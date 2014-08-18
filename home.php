@@ -12,10 +12,10 @@
 					<div class="button"><a href="http://osi.ucf.edu/homecoming/events">See The Events</a></div>
 				</div>
 
-				<div class="knightro"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/knightro.png" alt=""></div>
+				<!-- <div class="knightro"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/knightro.png" alt=""></div> -->
 					
 					<section class="events">
-					<h1>Next Upcoming Event</h1>
+						<h1>Next Upcoming Event</h1>
 
 <?php
 						$counter = 0;
@@ -38,15 +38,16 @@
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
 						<article class="event">
-							<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
 							<h3><?php echo $title; ?></h3>
 							<h4><?php echo $dates; ?></h4>
 							<p><?php echo $content; ?></p>
+							<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
+
 <?php
 							if ($link != "") {
 ?>
-							<p><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></p>
-							<p><a href="<?php echo site_url('/events/'); ?>">See More Events</a></p>
+							<div class="button  button--dark"><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></div>
+							<!-- <p><a href="<?php echo site_url('/events/'); ?>">See More Events</a></p> -->
 							<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 <?php				}
 ?>
