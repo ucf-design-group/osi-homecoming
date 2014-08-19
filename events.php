@@ -34,14 +34,17 @@ get_header(); ?>
 							<div class="moreinfo moreinfo--l">
 								<span class="arrowspan"><i class="fa fa-arrow-circle-up"></i></span>
 								<div class="importanteventbottom">
-									<p><?php echo $content; ?></p>
+									<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
+									<div class="importanteventdescription">
+										<p><?php echo $content; ?></p>
 	<?php
-									if ($link != "") {
+										if ($link != "") {
 	?>
-									<div class="button button--dark"><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></div>
-									<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
+										<div class="button button--dark"><a href="<?php echo $link; ?>" target="_blank">Purchase Tickets HERE</a></div>
+										<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 	<?php				}
 	?>
+									</div>
 								</div>
 							</div>
 						</article>
