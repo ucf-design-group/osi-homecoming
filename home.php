@@ -38,10 +38,10 @@
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
 						<article class="event">
-							<h3><?php echo $title; ?></h3>
-							<h4><?php echo $dates; ?></h4>
-							<p><?php echo $content; ?></p>
-							<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
+							<div class="eventDescription">
+								<h3><?php echo $title; ?></h3>
+								<h4><?php echo $dates; ?></h4>
+								<p><?php echo $content; ?></p>
 
 <?php
 							if ($link != "") {
@@ -51,6 +51,8 @@
 							<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 <?php				}
 ?>
+							</div>
+							<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
 						</article>
 <?php
 						$counter++;
