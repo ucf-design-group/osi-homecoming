@@ -1,4 +1,5 @@
 .page-volunteer
+
 	div.content-area
 		padding: 7em 0
 		@extend %clearfix
@@ -6,9 +7,10 @@
 	div.imgWrap
 		margin-bottom: 2em
 		float: left
+		margin-right: 7em
 		
 	.main
-		text-align: center
+		// text-align: center
 		margin: auto
 		width: 1251px
 		max-width: 100%
@@ -28,3 +30,15 @@
 
 	.descriptionWrap
 		padding-top: 5em
+	
+	.button
+		text-align: left
+
+
+@media screen and (max-width: 950px)
+
+	.page-volunteer
+
+		div.imgWrap, .descriptionWrap, .button
+			text-align: center
+			float: none
