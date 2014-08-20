@@ -37,6 +37,7 @@ get_header(); ?>
 									<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
 									<div class="importanteventdescription">
 										<p><?php echo $content; ?></p>
+									</div>
 	<?php
 										if ($link != "") {
 	?>
@@ -44,7 +45,6 @@ get_header(); ?>
 										<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
 	<?php				}
 	?>
-									</div>
 								</div>
 							</div>
 						</article>

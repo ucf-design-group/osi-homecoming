@@ -31,7 +31,7 @@
 	div.importanteventbottom
 		text-align: left
 		display: none
-		padding: 5em
+		padding: 3em
 		overflow: hidden
 		color: $bodyColor
 
@@ -40,9 +40,12 @@
 			font-family: $futura
 			font-size: 2em
 
+		a.img
+			float: left
+			padding-right: 1.5em
+
 	div.importanteventdescription
-		width: 68%
-		float: right
+		@extend %clearfix
 
 
 	// Normal Events --------------------------------------------- //
@@ -74,7 +77,7 @@
 	div.eventbottom
 		text-align: left
 		display: none
-		padding: 3em
+		padding: 1em
 		padding-top: 1em
 		overflow: hidden
 		color: $bodyColor
@@ -142,3 +145,92 @@
 	// 	height: 175px
 	// 	width: 100%
 	// 	background-color: black
+
+
+//---------------    Mobile    ---------------//
+
+@media screen and (max-width: 1560px)
+	.page-events
+		div.importanteventbottom
+			padding: 2.5em
+			p
+				font-size: 1.75em
+
+@media screen and (max-width: 1500px)
+	.page-events
+		div.eventbottom
+			p
+				font-size: 1.30em
+
+@media screen and (max-width: 1400px)
+	.page-events
+		div.importanteventbottom
+			padding: 1.75em
+
+@media screen and (max-width: 1350px)
+	.page-events
+		div.importanteventbottom
+			padding: 1.25em
+
+@media screen and (max-width: 1100px)
+	.page-events
+		div.eventtop
+			padding-top: 0.75em
+			h3
+				font-size: 2em
+
+@media screen and (max-width: 950px)
+	.page-events
+		article.importantevent
+			width: 100%
+			border: 1px solid $black
+		article.event
+			width: 50%
+			border: 1px solid $black
+		div.importanteventbottom
+			padding: 5em
+
+@media screen and (max-width: 600px)
+	.page-events
+		div.importanteventbottom
+			padding: 1em
+
+@media screen and (max-width: 500px)
+	.page-events
+		article.event
+			width: 100%
+
+@media screen and (max-width: 450px)
+	.page-events
+		div.importanteventbottom
+			p
+				font-size: 1.5em
+			a.img
+				margin-bottom: 50px
+				img
+					height: 240px
+					width: 155.2px
+
+@media screen and (max-width: 400px)
+	.page-events
+		div.importanteventtop
+			padding-top: 2em
+			h3
+				font-size: 3.5em
+			h4
+				font-size: 2.75em
+
+@media screen and (max-width: 340px)
+	.page-events
+		div.importanteventbottom
+			a.img
+				margin-bottom: 100px
+				img
+					height: 200px
+					width: 129.3px
+
+		div.importanteventtop
+			h3
+				font-size: 3.25em
+			h4
+				font-size: 2.5em
