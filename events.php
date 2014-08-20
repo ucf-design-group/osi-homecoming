@@ -111,9 +111,6 @@ get_header(); ?>
 								</div>
 							</div>
 					</section>
-					<div class="eventspacer">
-						
-					</div>
 				</div>
 			</div>
 
