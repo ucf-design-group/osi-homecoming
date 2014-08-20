@@ -18,7 +18,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<?php wp_footer(); ?>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
-		<script type="text/javascript" src="//use.typekit.net/fwc7gnk.js"></script>
+		<script type="text/javascript" src="//use.typekit.net/rhl7gpg.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</body>
 </html>
