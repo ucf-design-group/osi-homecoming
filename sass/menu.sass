@@ -43,6 +43,8 @@ nav.main-menu.full
 
 nav.main-menu.compact
 
+	padding: 0.5em 0
+
 	ul
 		display: none
 		width: 100%
@@ -69,3 +71,44 @@ li.current
 
 		&:hover
 			color: $black
+
+
+
+//---------------    Mobile    ---------------//
+
+@media screen and (max-width: 1320px)
+
+	nav.main-menu.full
+		a
+			padding: 0.5em 2em
+
+@media screen and (max-width: 1150px)
+
+	nav.main-menu.full
+		a
+			padding: 0.5em 1.5em
+
+@media screen and (max-width: 990px)
+
+	nav.main-menu.full
+		a
+			padding: 0.5em 1em
+
+@media screen and (max-width: 830px)
+
+	nav.main-menu.full
+		a
+			padding: 0.5em 0.5em
+
+@media screen and (max-width: 700px)
+
+	li.current
+		a
+			background-color: transparent
+			color: $bodyColor
+			border-top-left-radius: 0
+			border-top-right-radius: 0
+			font-weight: 500
+
+			&:hover
+				color: $bodyColor
