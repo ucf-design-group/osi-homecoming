@@ -185,7 +185,7 @@ function allowDesktopBGVidLoad () {
 
 function countdownTimer() {
 
-	var endTime = new Date("20 August 2014");			
+	var endTime = new Date("19 October 2014");			
 	endTime = (Date.parse(endTime) / 1000);
 
 	var now = new Date();

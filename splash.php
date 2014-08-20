@@ -34,10 +34,10 @@
 				<div id="hours"></div>
 				<div id="minutes"></div>
 				<div id="seconds"></div>
-				<h1>Until Theme Reveal</h1>
+				<h1>Until Homecoming</h1>
 			</div>
 			<div class="button button--dark"><a href="http://osi.ucf.edu/homecoming/home">Continue to Homepage &#x276f;</a></div>
-			<div class="splash-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/reveal.png"></div>
+			<div class="splash-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/logo.png"></div>
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
